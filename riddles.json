@@ -56,5 +56,14 @@
         ],
         "difficulty": "easy",
         "category": "history"
+    },
+    {
+        "id": 6,
+        "question": "what is 34 + 90?",
+        "correct_answer": "124",
+        "type": "open",
+        "possible_answers": [],
+        "difficulty": "easy",
+        "category": "math"
     }
 ]

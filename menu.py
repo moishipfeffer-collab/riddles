@@ -21,21 +21,16 @@ def run_menu():
             print("invalid chois")
 def manage_riddles(repository):
     while True:
-        print("\n1. add riddle")
-        print("2. show all riddles")
-        print("3. updat riddle")
-        print("4. delete riddle")
-        print("5. return")
-        given_choose=input("\nchoose an option: ")
-        if given_choose=="1":
+        given_choose=questionary.select("nchoose an option:",["add riddle","show all riddles","update riddle","delete riddle","return"]).ask()
+        if given_choose=="add riddle":
             add_riddle_menu(repository)
-        elif given_choose == "2":
+        elif given_choose == "show all riddles":
             show_riddles(repository)
-        elif given_choose == "3":
+        elif given_choose == "update riddle":
             update_riddle_menu(repository)
-        elif given_choose == "4":
+        elif given_choose == "delete riddle":
             delete_riddle_menu(repository)
-        elif given_choose == "5":
+        elif given_choose == "return":
             break
     
 def add_riddle_menu(repository):
