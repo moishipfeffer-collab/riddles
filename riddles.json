@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "question": "What is 2 + 2?",
+        "correct_answer": "4",
+        "type": "open",
+        "possible_answers": [],
+        "difficulty": "easy",
+        "category": "math"
+    },
+    {
+        "id": 2,
+        "question": "What is 5+26?",
+        "correct_answer": "31",
+        "type": "multiple_4",
+        "possible_answers": [
+            "30",
+            "31",
+            "21",
+            "12"
+        ],
+        "difficulty": "easy",
+        "category": "math"
+    },
+    {
+        "id": 3,
+        "question": "Is Python a programming language?",
+        "correct_answer": "yes",
+        "type": "multiple_2",
+        "possible_answers": [
+            "yes",
+            "no"
+        ],
+        "difficulty": "easy",
+        "category": "programming"
+    },
+    {
+        "id": 4,
+        "question": "what is the capital sity of England?",
+        "correct_answer": "london",
+        "type": "open",
+        "possible_answers": [],
+        "difficulty": "easy",
+        "category": "geography"
+    },
+    {
+        "id": 5,
+        "question": "in which year world war 2 ended?",
+        "correct_answer": "1945",
+        "type": "multiple_4",
+        "possible_answers": [
+            "1944",
+            "1939",
+            "1973",
+            "1945"
+        ],
+        "difficulty": "easy",
+        "category": "history"
+    }
+]
