@@ -2,22 +2,20 @@ from riddle_repsitory import RiddleRepository
 from riddle import *
 from player import Player
 from riddle_game import RiddleGame
+import questionary 
 def run_menu():
     repository=RiddleRepository("riddles.json")
     print("\nwelcome to the riddle game!")
     while True:
-        print("\n1.play game")
-        print("2.manage riddles")
-        print("3.view leadership")
-        print("4.exit")
-        given_choose=input("\nchoose an option: ")
-        if given_choose == "1":
+        given_choose=questionary.select("choose an option:",choices=["play game","manage riddles","view leadership","exit"]).ask()
+
+        if given_choose == "play game":
             play_game(repository)
-        elif given_choose == "2":
+        elif given_choose == "manage riddles":
             manage_riddles(repository)
-        elif given_choose == "3":
+        elif given_choose == "view leadership":
             pass
-        elif given_choose == "4":
+        elif given_choose == "exit":
             break
         else:
             print("invalid chois")

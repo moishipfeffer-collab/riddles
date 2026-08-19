@@ -39,3 +39,4 @@ class RiddleGame:
         aveerage_category=result.average_time_by_category()
         for category,time in aveerage_category.items():
             print(f"{category}: {time:.2f} cecons")
+    
